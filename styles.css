@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.event-banner {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.title {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-form input, .login-form button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.login-form input {
+    background-color: #f1f1f1;
+}
+
+.login-form button {
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    transform: scale(1.05);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.popup {
+    display: none; /* Hide by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    z-index: 1000; /* Sit on top */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    animation: fadeIn 0.5s; /* Fade in animation */
+}
+
+.popup-content {
+    background-color: white; /* White background for the message */
+    padding: 30px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+    max-width: 400px; /* Max width for the popup */
+    margin: auto; /* Center the popup horizontally */
+    position: relative; /* Position for the animation */
+}
+
+.popup-content h2 {
+    color: #28a745; /* Green color for the heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.popup-content p {
+    margin: 15px 0; /* Margin for the paragraph */
+    font-size: 16px; /* Font size for the text */
+}
+
+.popup button {
+    padding: 10px 20px; /* Padding around the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.popup button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+* Existing styles from previous response */
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ff6b6b;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
